@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+#  devise_for :users  # added by gem 'devise'
+
   resources :ideas 
   root "ideas#index"
   
