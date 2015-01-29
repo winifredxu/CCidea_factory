@@ -1,0 +1,12 @@
+<h1>List All ideas </h1>
+
+	<% @entire_ideas.each do |i| %>
+		<%#= link_to i.title, idea_path(i) %>
+		<!-- this is the short hand with only the instance varaible -->
+		<%= link_to i.title, i %> <br>
+		<%= i.body %>
+	<% end %>
+	<% if @entire_ideas.length == 0 %>
+		<em>No idea found! </em>
+	<% end %>
+</table>

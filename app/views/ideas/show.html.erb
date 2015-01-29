@@ -1,0 +1,6 @@
+<h1><%= @idea.title %></h1>
+<p><%= @idea.body %></p>
+
+<%= link_to "Edit", edit_idea_path(@idea), class: "btn btn-info" %>
+<%= link_to "Delete", idea_path(@idea), class: "btn btn-danger",
+	method: :delete, 	data: {confirm: "sure to delete idea?"} %>
